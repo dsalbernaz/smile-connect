@@ -45,6 +45,9 @@ const CLINIC_PHOTOS = [
   },
 ];
 
+const CLINIC_MAP_EMBED_URL =
+  "https://www.google.com/maps?q=Pra%C3%A7a%20C%C3%B4nego%20Lima%2C%2030%2C%20Centro%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP&z=17&output=embed";
+
 const GOOGLE_RATING = "4,9";
 const GOOGLE_REVIEWS_COUNT = "380";
 const TESTIMONIALS = [
@@ -415,6 +418,33 @@ function LandingPage() {
                   Sáb: 08:00–12:00
                 </p>
               </div>
+            </div>
+          </div>
+          <div className="mt-8 overflow-hidden rounded-3xl border border-border bg-card shadow-sm">
+            <div className="flex items-center justify-between gap-4 border-b border-border px-5 py-4">
+              <div>
+                <p className="font-semibold text-foreground">Nossa localização</p>
+                <p className="text-sm text-muted-foreground">
+                  Praça Cônego Lima, 30, Centro, São José dos Campos - SP
+                </p>
+              </div>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Pra%C3%A7a%20C%C3%B4nego%20Lima%2C%2030%2C%20Centro%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="shrink-0 text-sm font-semibold text-primary transition-colors hover:text-primary/80"
+              >
+                Abrir no Maps
+              </a>
+            </div>
+            <div className="aspect-[16/10] w-full">
+              <iframe
+                title="Mapa da OrthoDontic São José dos Campos - Unidade Quinze de Novembro"
+                src={CLINIC_MAP_EMBED_URL}
+                className="h-full w-full border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
           </div>
         </div>
