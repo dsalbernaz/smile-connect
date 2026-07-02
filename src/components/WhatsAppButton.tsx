@@ -1,5 +1,14 @@
 import { WHATSAPP_LINK } from "@/lib/aparelhos";
 
+declare global {
+  interface Window {
+    dataLayer?: unknown[];
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
+const GOOGLE_ADS_CONVERSION_ID = "AW-795927494/9lLyCLPl4skcEMbHw_sC";
+
 export function WhatsAppButton({
   size = "default",
   className = "",
@@ -20,11 +29,24 @@ export function WhatsAppButton({
       "fixed bottom-5 right-5 z-50 px-6 py-3.5 text-base shadow-2xl md:bottom-8 md:right-8",
   };
 
+  function trackWhatsAppConversion() {
+    if (typeof window === "undefined" || typeof window.gtag !== "function") {
+      return;
+    }
+
+    window.gtag("event", "conversion", {
+      send_to: GOOGLE_ADS_CONVERSION_ID,
+      value: 1.0,
+      currency: "BRL",
+    });
+  }
+
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={trackWhatsAppConversion}
       className={`${base} ${sizes[size]} ${className}`}
       style={{ backgroundColor: "#25D366" }}
       aria-label={label}
