@@ -46,7 +46,7 @@ const CLINIC_PHOTOS = [
 ];
 
 const CLINIC_MAP_EMBED_URL =
-  "https://www.google.com/maps?q=Pra%C3%A7a%20C%C3%B4nego%20Lima%2C%2030%2C%20Centro%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP&z=17&output=embed";
+  "https://www.google.com/maps?q=OrthoDontic%20-%20Rua%20Quinze%20de%20Novembro%2C%20Sobreloja%20-%20Centro%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP&z=17&output=embed";
 
 const GOOGLE_RATING = "4,9";
 const GOOGLE_REVIEWS_COUNT = "380";
@@ -425,11 +425,11 @@ function LandingPage() {
               <div>
                 <p className="font-semibold text-foreground">Nossa localização</p>
                 <p className="text-sm text-muted-foreground">
-                  Praça Cônego Lima, 30, Centro, São José dos Campos - SP
+                  OrthoDontic - Rua Quinze de Novembro, Sobreloja - Centro, São José dos Campos - SP
                 </p>
               </div>
               <a
-                href="https://www.google.com/maps/search/?api=1&query=Pra%C3%A7a%20C%C3%B4nego%20Lima%2C%2030%2C%20Centro%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP"
+                href="https://www.google.com/maps/search/?api=1&query=OrthoDontic%20-%20Rua%20Quinze%20de%20Novembro%2C%20Sobreloja%20-%20Centro%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="shrink-0 text-sm font-semibold text-primary transition-colors hover:text-primary/80"
