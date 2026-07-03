@@ -7,7 +7,7 @@ declare global {
   }
 }
 
-const GOOGLE_ADS_CONVERSION_ID = "AW-795927494/9lLyCLPl4skcEMbHw_sC";
+const GOOGLE_ADS_CONVERSION_ID = "AW-18297232644/dPeiCNKepcocEIS65pRE";
 
 export function WhatsAppButton({
   size = "default",
